@@ -1,4 +1,4 @@
-package Arrays;
+package main.java.Arrays;
 
 public class Largest_Element_Array {
 

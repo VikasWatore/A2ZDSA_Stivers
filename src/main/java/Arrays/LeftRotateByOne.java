@@ -1,4 +1,4 @@
-package Arrays;
+package main.java.Arrays;
 
 public class LeftRotateByOne {
     public static void main(String[] args) {

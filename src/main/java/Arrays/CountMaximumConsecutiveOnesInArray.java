@@ -1,4 +1,4 @@
-package Arrays;
+package main.java.Arrays;
 //Given an array that contains only 1 and 0 return the count of maximum consecutive ones in the array.
 //Input: prices = {1, 1, 0, 1, 1, 1}
 //Output: 3

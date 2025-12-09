@@ -1,4 +1,4 @@
-package Arrays;
+package main.java.Arrays;
 
 public class FindSecondSmallest_And_SecondLargestElement {
     public static void main(String[] args) {

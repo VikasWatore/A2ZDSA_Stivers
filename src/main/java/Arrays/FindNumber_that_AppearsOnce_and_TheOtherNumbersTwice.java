@@ -1,4 +1,4 @@
-package Arrays;
+package main.java.Arrays;
 
 public class FindNumber_that_AppearsOnce_and_TheOtherNumbersTwice {
     public static void main(String[] args) {
