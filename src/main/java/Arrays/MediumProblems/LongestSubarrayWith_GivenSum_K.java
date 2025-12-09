@@ -19,7 +19,7 @@ public class LongestSubarrayWith_GivenSum_K {
     }
 
     //brute Force
-//    Time Complexity: O(n3), where n is the size of the array.
+//    Time Complexity: O(n2), where n is the size of the array.
 //    This is because we have three nested loops: one for the starting index, one for the ending index, and
 //    one for calculating the sum of the subarray.
 //    Space Complexity: O(1), as we are using a constant amount of space for variables and not using
@@ -41,7 +41,9 @@ public class LongestSubarrayWith_GivenSum_K {
 
 
     //better solution with hashmap and prefix sum
-
+//    Time Complexity: O(N) or O(N*logN) depending on which map data structure
+//    we are using, where N = size of the array.
+//    Space Complexity: O(N) as we are using a map data structure.
     public static int longSubArrayWithHashmap(int[] arr, int k) {
         Map<Integer, Integer> seenSum = new HashMap<>();
         int res = 0;
@@ -58,5 +60,7 @@ public class LongestSubarrayWith_GivenSum_K {
         }
         return res;
     }
+
+
 
 }
