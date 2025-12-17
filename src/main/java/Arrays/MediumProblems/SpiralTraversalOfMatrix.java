@@ -15,7 +15,7 @@ public class SpiralTraversalOfMatrix {
         };
 
         // Call spiralOrder function
-        List ans=spiralOrder(matrix);
+        List<Integer> ans=spiralOrder(matrix);
 
         // Print result
         System.out.println(ans);
@@ -25,8 +25,8 @@ public class SpiralTraversalOfMatrix {
 //    where `m` is the number of rows and `n` is the number of columns.
 //    Space Complexity: O(1)We use only a few integer variables to keep track of boundaries
 //    (top, bottom, left, right). The `result` vector is part of the output, so it's not counted as extra space.
-    private static List spiralOrder(int[][] matrix) {
-            List result=new ArrayList();
+    private static List<Integer> spiralOrder(int[][] matrix) {
+            List<Integer> result=new ArrayList<>();
             int m=matrix.length;
             int n=matrix[0].length;
 
