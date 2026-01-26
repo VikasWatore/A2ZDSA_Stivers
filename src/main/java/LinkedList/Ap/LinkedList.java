@@ -131,32 +131,60 @@ public class LinkedList {
         //key not found
         return -1;
     }
+    //recursive Search
+    public static int helper(Node head,int key){
+
+        if (head==null) return -1;
+        if (head.data==key){
+            return 0;
+        }
+        int idx=helper(head.next,key);
+        if (idx==-1){
+            return -1;
+        }
+        return idx+1;
+    }
+    public static int recSearch(int key){
+        return helper(head,key);
+
+    }
+
+    public static void reverse(){
+        Node prev=null;
+        Node curr=tail=head;
+        Node next;
+
+        while(curr!=null){
+            next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+        }
+        head=prev;
+    }
 
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
-        ll.print();
+//        ll.print();
         ll.addFirst(2);
-        ll.print();
+//        ll.print();
         ll.addFirst(1);
-        ll.print();
+//        ll.print();
         ll.addLast(3);
-        ll.print();
+//        ll.print();
         ll.addLast(4);
-        ll.print();
-        ll.add(2, 5);
-        ll.print();
-      System.out.println(ll.size);
-        System.out.println("Removing First ");
-        removeFirst();
-        ll.print();
-        System.out.println("Removing last");
-        removeLast();
-        ll.print();
-        System.out.println("search for the 5");
-        int i = itrSearch(5);
-        System.out.println("At the :"+i);
+//        ll.print();
+//        ll.add(2, 5);
+//        ll.print();
+//      System.out.println(ll.size);
+//        System.out.println("Removing First ");
+//        removeFirst();
+//        ll.print();
+//        System.out.println("Removing last");
+//        removeLast();
+//        ll.print();
 
-        System.out.println(itrSearch(10));
-
+        ll.reverse();
+        ll.print();
     }
 }
